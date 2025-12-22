@@ -12,11 +12,10 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI()
 
+import os
+
 # CORS configuration
-origins = [
-    "http://localhost:5173",
-    "http://127.0.0.1:5173",
-]
+origins = os.getenv("ALLOWED_ORIGINS", "http://localhost:5173,http://127.0.0.1:5173").split(",")
 
 app.add_middleware(
     CORSMiddleware,

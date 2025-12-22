@@ -93,6 +93,45 @@ npm run dev
 ```
 The frontend application will be available at `http://localhost:5173`.
 
+## Docker Deployment
+
+To run the application in a production-like environment using Docker:
+
+1.  **Build and Start Containers**:
+    ```bash
+    docker-compose up -d --build
+    ```
+
+2.  **Access the Application**:
+    - Frontend: `http://localhost:3000`
+    - Backend: `http://localhost:8000`
+
+3.  **Stop Containers**:
+    ```bash
+    docker-compose down
+    ```
+
+
+## Running Tests
+
+To ensure the application is working correctly, you can run the included test suites.
+
+### Backend Tests
+Navigate to the backend directory and run:
+
+```bash
+cd backend
+python -m pytest tests/test_main.py
+```
+
+### Frontend Tests
+Navigate to the frontend directory and run:
+
+```bash
+cd frontend
+npm run test
+```
+
 ## API Documentation
 
 Once the backend is running, you can access the interactive API docs (Swagger UI) at:
