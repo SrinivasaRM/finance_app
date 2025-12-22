@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import TransactionForm from './components/TransactionForm';
 import WeeklyReport from './components/WeeklyReport';
-import './APP.css'; // We'll update index.css or App.css for styling
+import './App.css'; // We'll update index.css or App.css for styling
 
 function App() {
   const [refreshTrigger, setRefreshTrigger] = useState(0);
