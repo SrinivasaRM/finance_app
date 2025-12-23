@@ -1,0 +1,4 @@
+AWS ROOT USER/Password - Srinu.tdk@gmail.com/Mastercard12# and then authenticator
+
+ssh -i "path/to/your-key-pair-name.pem" ubuntu@15.206.212.217
+
