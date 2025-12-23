@@ -10,7 +10,7 @@ const WeeklyReport = ({ refreshTrigger }) => {
 
     const fetchReport = async () => {
         try {
-            const response = await axios.get('http://127.0.0.1:8000/reports/weekly');
+            const response = await axios.get('/api/reports/weekly');
             setReport(response.data);
         } catch (error) {
             console.error("Error fetching report", error);
