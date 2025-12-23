@@ -7,7 +7,7 @@ services:
     ports:
       - "8000:8000"
     environment:
-      - DATABASE_URL=sqlite:///./finance.db
+      - DATABASE_URL=sqlite:///./data/finance.db
       - ALLOWED_ORIGINS=http://${HOST},http://${HOST}:3000
     volumes:
       - ./backend_data:/app/data
