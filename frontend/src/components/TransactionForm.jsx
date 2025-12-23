@@ -9,7 +9,7 @@ const TransactionForm = ({ onTransactionAdded }) => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('http://127.0.0.1:8000/transactions', {
+            await axios.post('/api/transactions', {
                 amount: parseFloat(amount),
                 type,
                 description,
